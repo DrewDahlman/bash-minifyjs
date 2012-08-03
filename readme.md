@@ -38,4 +38,4 @@ Now you can edit your js files and when ready CD to your directory and run -
 
 #NOTES
 if you get an error saying ./build.sh permission denied make sure you're in your current directory and type the following command
-<pre>chmod a+x .build.sh</pre>
+<pre>chmod a+x build.sh</pre>
