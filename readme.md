@@ -27,7 +27,7 @@ cat js/someMinifiedPlugin.js > js/site.js
 cat js/application.js >> js/site.js
 cat js/someJsFile.js >> js/site.js
 
-minifyjs js/site.js > js/site.min.js
+minifyjs -m -i js/site.js -o js/site.min.js
 echo "done"
 </pre>
 
@@ -39,3 +39,6 @@ Now you can edit your js files and when ready CD to your directory and run -
 #NOTES
 if you get an error saying ./build.sh permission denied make sure you're in your current directory and type the following command
 <pre>chmod a+x build.sh</pre>
+
+##CHANGE LOG
+5.13.13 - Updated Bash script for updated minifyjs API.
