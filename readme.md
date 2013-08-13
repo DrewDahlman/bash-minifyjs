@@ -15,13 +15,16 @@ sudo npm -g install minifyjs
 </pre>
 
 ##To Use
-Place the build.sh script in your root folder and place the js files you wish to combine and minify in the order you want them. Note that when combining use  > for already minified sources and >> for un-minified sources.
+Place the build.sh script in your root folder and place the js files you wish to combine and minify in the order you want them. Use >> for all scripts (whether minified or not).
 <pre>
 #!/bin/bash
 
+# ALWAYS OVERWRITE MOST RECENT
+cat js/app.js > js/app.js
+
 # PLUGINS
-cat js/jQuery.js > js/site.js
-cat js/someMinifiedPlugin.js > js/site.js
+cat js/jQuery.js >> js/site.js
+cat js/someMinifiedPlugin.js >> js/site.js
 
 # site js files
 cat js/application.js >> js/site.js
