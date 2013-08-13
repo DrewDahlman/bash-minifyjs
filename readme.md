@@ -19,9 +19,12 @@ Place the build.sh script in your root folder and place the js files you wish to
 <pre>
 #!/bin/bash
 
+# ALWAYS OVERWRITE MOST RECENT
+cat js/app.js > js/app.js
+
 # PLUGINS
-cat js/jQuery.js > js/site.js
-cat js/someMinifiedPlugin.js > js/site.js
+cat js/jQuery.js >> js/site.js
+cat js/someMinifiedPlugin.js >> js/site.js
 
 # site js files
 cat js/application.js >> js/site.js
